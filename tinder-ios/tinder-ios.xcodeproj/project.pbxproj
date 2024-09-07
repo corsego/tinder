@@ -14,7 +14,6 @@
 		4E21EE692C8CA6860070C9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E21EE682C8CA6860070C9FE /* Assets.xcassets */; };
 		4E21EE6C2C8CA6860070C9FE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4E21EE6B2C8CA6860070C9FE /* Base */; };
 		4E21EE752C8CA7570070C9FE /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 4E21EE742C8CA7570070C9FE /* Turbo */; };
-		4E21EE7B2C8CB7D40070C9FE /* path-configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E21EE7A2C8CB7D40070C9FE /* path-configuration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		4E21EE682C8CA6860070C9FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E21EE6B2C8CA6860070C9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E21EE6D2C8CA6860070C9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E21EE7A2C8CB7D40070C9FE /* path-configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "path-configuration.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 			children = (
 				4E21EE5F2C8CA6840070C9FE /* AppDelegate.swift */,
 				4E21EE612C8CA6840070C9FE /* SceneDelegate.swift */,
-				4E21EE7A2C8CB7D40070C9FE /* path-configuration.json */,
 				4E21EE632C8CA6840070C9FE /* ViewController.swift */,
 				4E21EE652C8CA6840070C9FE /* Main.storyboard */,
 				4E21EE682C8CA6860070C9FE /* Assets.xcassets */,
@@ -137,7 +134,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E21EE692C8CA6860070C9FE /* Assets.xcassets in Resources */,
-				4E21EE7B2C8CB7D40070C9FE /* path-configuration.json in Resources */,
 				4E21EE6C2C8CA6860070C9FE /* Base in Resources */,
 				4E21EE672C8CA6840070C9FE /* Base in Resources */,
 			);
