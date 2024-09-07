@@ -8,7 +8,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         window!.rootViewController = navigationController
-        visit(url: URL(string: "https://turbo-native-demo.glitch.me")!)
+        visit(url: URL(string: "http://localhost:3000")!)
     }
     
     private func visit(url: URL) {
