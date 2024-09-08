@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-<%= platform_identifier%>>
   <head>
     <title><%= "#{content_for(:title)}#{" | Tinder Rails" unless turbo_native_app?}" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +18,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="non-turbo-native:bg-rose-400">
     <%#= request.user_agent %>
     <%#= turbo_native_app? %>
     <%= link_to 'Home', root_path, data: { turbo_action: "replace" } %>
