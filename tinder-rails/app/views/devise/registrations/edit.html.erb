@@ -1,7 +1,7 @@
 <% content_for :title, "Edit my account" %>
 <h2 class="turbo-native:hidden">Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, "data-controller": "bridge--form", data: { action: "turbo:submit-start->bridge--form#submitStart turbo:submit-end->bridge--form#submitEnd" } }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
@@ -33,7 +33,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Update", data: { "bridge--form-target": "submit" }, class: 'turbo-native:hidden' %>
   </div>
 <% end %>
 
