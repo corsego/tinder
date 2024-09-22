@@ -10,12 +10,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         .server(rootURL.appending(path: "turbo/ios/path_configuration.json"))
     ])
 
-    private lazy var navigator = TurboNavigator(pathConfiguration: pathConfiguration)
+    private lazy var navigator = TurboNavigator(pathConfiguration: pathConfiguration, delegate: self)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
+        Turbo.configureStrada()
 
         window!.rootViewController = navigator.rootViewController
         navigator.route(rootURL)
+    }
+}
+
+extension SceneDelegate: TurboNavigatorDelegate {
+    func handle(proposal: VisitProposal) -> ProposalResult {
+        .acceptCustom(WebViewController(url: proposal.url))
     }
 }

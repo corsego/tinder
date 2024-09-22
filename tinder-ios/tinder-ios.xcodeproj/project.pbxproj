@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		4E21EE692C8CA6860070C9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E21EE682C8CA6860070C9FE /* Assets.xcassets */; };
 		4E21EE6C2C8CA6860070C9FE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4E21EE6B2C8CA6860070C9FE /* Base */; };
 		4E21EE752C8CA7570070C9FE /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 4E21EE742C8CA7570070C9FE /* Turbo */; };
+		4E737A6C2CA03BAB00558860 /* Strada in Frameworks */ = {isa = PBXBuildFile; productRef = 4E737A6B2CA03BAB00558860 /* Strada */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,12 +28,19 @@
 		4E21EE6D2C8CA6860070C9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4E737A6D2CA03BCF00558860 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		4E737A742CA03BFD00558860 /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
+		4E737A752CA03C0200558860 /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		4E21EE592C8CA6840070C9FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4E21EE752C8CA7570070C9FE /* Turbo in Frameworks */,
+				4E737A6C2CA03BAB00558860 /* Strada in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,9 @@
 		4E21EE5E2C8CA6840070C9FE /* tinder-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4E737A752CA03C0200558860 /* Controllers */,
+				4E737A742CA03BFD00558860 /* Extensions */,
+				4E737A6D2CA03BCF00558860 /* Components */,
 				4E21EE5F2C8CA6840070C9FE /* AppDelegate.swift */,
 				4E21EE612C8CA6840070C9FE /* SceneDelegate.swift */,
 				4E21EE632C8CA6840070C9FE /* ViewController.swift */,
@@ -84,9 +95,15 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				4E737A6D2CA03BCF00558860 /* Components */,
+				4E737A742CA03BFD00558860 /* Extensions */,
+				4E737A752CA03C0200558860 /* Controllers */,
+			);
 			name = "tinder-ios";
 			packageProductDependencies = (
 				4E21EE742C8CA7570070C9FE /* Turbo */,
+				4E737A6B2CA03BAB00558860 /* Strada */,
 			);
 			productName = "tinder-ios";
 			productReference = 4E21EE5C2C8CA6840070C9FE /* tinder-ios.app */;
@@ -118,6 +135,7 @@
 			mainGroup = 4E21EE532C8CA6840070C9FE;
 			packageReferences = (
 				4E21EE732C8CA7570070C9FE /* XCRemoteSwiftPackageReference "turbo-ios" */,
+				4E737A6A2CA03BAB00558860 /* XCRemoteSwiftPackageReference "strada-ios" */,
 			);
 			productRefGroup = 4E21EE5D2C8CA6840070C9FE /* Products */;
 			projectDirPath = "";
@@ -381,6 +399,14 @@
 				kind = branch;
 			};
 		};
+		4E737A6A2CA03BAB00558860 /* XCRemoteSwiftPackageReference "strada-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/strada-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -388,6 +414,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4E21EE732C8CA7570070C9FE /* XCRemoteSwiftPackageReference "turbo-ios" */;
 			productName = Turbo;
+		};
+		4E737A6B2CA03BAB00558860 /* Strada */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E737A6A2CA03BAB00558860 /* XCRemoteSwiftPackageReference "strada-ios" */;
+			productName = Strada;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
